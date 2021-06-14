@@ -1,0 +1,17 @@
+.home {
+    text-align: center;
+    .title {
+        background-color: #ccc;
+        padding: 30px;
+    }
+    .content {
+        padding: 100px 0;
+        background-color: rgb(112, 210, 232);
+    }
+
+    button {
+        margin-top: 30px;
+        display: inline-block;
+        padding: 10px;
+    }
+}
