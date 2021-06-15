@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const mode =
     process.env.NODE_ENV === 'production' ? 'production' : 'development'
 module.exports = {
@@ -19,7 +20,7 @@ module.exports = {
             {
                 test: /\.(css|scss|sass)$/i, //正規判斷要使用loader的檔案
                 use: [
-                    'css-hot-loader',　//修改css部重整頁面並且更新 檔案不能有hash
+                    'css-hot-loader', //修改css部重整頁面並且更新 檔案不能有hash
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader',
@@ -52,5 +53,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'main.css',
         }),
+        new CleanWebpackPlugin(),
     ],
 }
