@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import MYButton from '../../components/MYButton/index.js'
 import './index.scss'
 export default class index extends Component {
     static propTypes = {
@@ -10,18 +11,25 @@ export default class index extends Component {
         const { list } = this.props
         return (
             <ul className="list">
-                {list.map((item) => {
-                    return (
-                        <li key={item.id}>
-                            <p>{item.content}</p>
-                            <button
-                                onClick={() => this.props.delHandler(item.id)}
-                            >
-                                刪除
-                            </button>
-                        </li>
-                    )
-                })}
+                {list.length ? (
+                    list.map((item, i) => {
+                        return (
+                            <li key={item.id}>
+                                <p>
+                                    {i + 1}. {item.content}
+                                </p>
+                                <MYButton
+                                    text="刪除"
+                                    onClick={() =>
+                                        this.props.delHandler(item.id)
+                                    }
+                                ></MYButton>
+                            </li>
+                        )
+                    })
+                ) : (
+                    <li style={{ justifyContent: 'center' }}>無紀錄</li>
+                )}
             </ul>
         )
     }

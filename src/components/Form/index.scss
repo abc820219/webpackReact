@@ -1,8 +1,10 @@
 .form-search {
-    padding: 20px 0;
-    text-align: center;
-    input,
-    button {
-        line-height: 30px;
+    margin-bottom: 10px;
+    input {
+        border: none;
+        height: 30px;
+        margin-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
     }
 }

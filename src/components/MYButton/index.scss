@@ -1,0 +1,15 @@
+.myButton {
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    background-color: #78d9ef;
+    line-height: 2;
+    a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    &:hover {
+        background-color: #92ebff;
+    }
+}

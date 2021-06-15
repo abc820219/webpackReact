@@ -1,17 +1,19 @@
 .home {
-    text-align: center;
-    .title {
-        background-color: #ccc;
-        padding: 30px;
-    }
     .content {
-        padding: 100px 0;
-        background-color: rgb(112, 210, 232);
-    }
-
-    button {
-        margin-top: 30px;
-        display: inline-block;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 40px);
+        ul {
+            text-align: center;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        li {
+            line-height: 2;
+        }
     }
 }
