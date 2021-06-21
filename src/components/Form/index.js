@@ -12,9 +12,8 @@ export default class index extends Component {
             <div className="form-search">
                 <input type="text" ref={(self) => (this.search = self)} />
                 <MYButton
-                    text="新增紀錄"
                     onClick={() => this.props.addHandler(this.search.value)}
-                ></MYButton>
+                >新增紀錄</MYButton>
             </div>
         )
     }

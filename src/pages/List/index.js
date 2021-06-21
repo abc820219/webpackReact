@@ -42,7 +42,7 @@ export default class index extends Component {
             <div className="form">
                 <Form {...this.state} addHandler={this.addHandler} />
                 <List {...this.state} delHandler={this.delHandler} />
-                <MYButton to="/home" text="返回首頁" />
+                <MYButton to="/home">返回首頁</MYButton>
             </div>
         )
     }

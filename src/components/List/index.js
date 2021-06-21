@@ -19,11 +19,10 @@ export default class index extends Component {
                                     {i + 1}. {item.content}
                                 </p>
                                 <MYButton
-                                    text="刪除"
                                     onClick={() =>
                                         this.props.delHandler(item.id)
                                     }
-                                ></MYButton>
+                                >刪除</MYButton>
                             </li>
                         )
                     })

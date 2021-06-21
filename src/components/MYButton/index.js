@@ -6,9 +6,9 @@ export default class index extends Component {
         return (
             <button {...this.props} className={'myButton ' + this.props.className}>
                 {this.props.to ? (
-                    <Link to={this.props.to}>{this.props.text}</Link>
+                    <Link to={this.props.to}>{this.props.children}</Link>
                 ) : (
-                    this.props.text
+                    this.props.children
                 )}
             </button>
         )

@@ -27,10 +27,22 @@ export default class index extends Component {
                         <li>-Webpack</li>
                         <li>
                             <MYButton
-                                text={'前往作品'}
                                 className={'a'}
                                 to="/list"
-                            ></MYButton>
+                            >前往作品</MYButton>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>作品名稱:圖文留言板</li>
+                        <li>-AWS</li>
+                        <li>-AWS-EC2</li>
+                        <li>-AWS-S3</li>
+                        <li>-AES-RDS</li>
+                        <li>
+                            <MYButton
+                                className={'a'}
+                                to="/board"
+                            >前往作品</MYButton>
                         </li>
                     </ul>
                 </div>

@@ -14,6 +14,7 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'dist'), //測試server啟動的資料夾 預設root
         hot: true,
+        historyApiFallback: true,
     },
     module: {
         rules: [

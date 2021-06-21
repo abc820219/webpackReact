@@ -1,0 +1,20 @@
+.board {
+  background-color: #fff;
+  width: 960px;
+  padding: 20px;
+  margin: 30px auto 0 auto;
+  border-radius: 15px;
+  height: 580px;
+  overflow-y: auto;
+  .board-upload {
+    h2 {
+      margin: 10px 0;
+    }
+    .input-item {
+      margin: 5px 0;
+    }
+  }
+  .board-list{
+
+  }
+}

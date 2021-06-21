@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { hot } from 'react-hot-loader/root'
-import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Home from './pages/Home/index.js'
 import List from './pages/List/index.js'
+import Board from './pages/Board/index.js'
 import './app.scss'
 let App = class app extends Component {
     componentDidMount() {
@@ -24,6 +25,9 @@ let App = class app extends Component {
                 <Switch>
                     <Route path="/list">
                         <List />
+                    </Route>
+                    <Route path="/board">
+                        <Board />
                     </Route>
                     <Route path="/">
                         <Home />
